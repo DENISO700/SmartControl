@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SmartControl</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/smartcontrol.css">
+    <script src="https://kit.fontawesome.com/552ebddad2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="sc-main">
+      <div class="sidebar_container"> 
+        <nav class="sidebar"><a class="sidebar__brand" href=""><img src="assets/LOGO.png" alt=""/></a>
+          <ul class="sidebar__items">
+            <li class="sidebar__item my-5"><a href="">
+<i class="fas fa-chart-pie"></i></i>
+              <label>Dashboard</label></a>
+            </li><span class="txt-gray txt-upp txt-s" title="">A d m i n i s t r a r</span>
+            <li class="sidebar__item my-1"><a href="">
+<i class="fas fa-cubes"></i>
+              <label>Inventario</label></a>   
+            </li>
+            <li class="sidebar__item my-1"><a href="">
+<i class="fas fa-shopping-cart"></i>
+              <label>Ventas</label></a>   
+            </li>
+            <li class="sidebar__item my-1"><a href="">
+<i class="fas fa-user-tag"></i>
+              <label>Proveedores</label></a>   
+            </li>
+            <li class="sidebar__item my-1"><a href="">
+<i class="fas fa-users-cog"></i>
+              <label>Usuarios</label></a>    
+            </li>
+            <li class="sidebar__item mt-6"><a href="">
+<i class="fas fa-cog"></i>
+              <label>Configuración</label></a>   
+            </li>
+            <li class="sidebar__item my-1"><a href="">
+<i class="far fa-question-circle"></i>
+              <label>Centro de Ayuda</label></a> 
+            </li>
+            <li class="sidebar__item my-1"><a href="">
+<i class="fas fa-sign-out-alt"></i>
+              <label>Salir</label></a>   
+            </li>
+            <div class="chip chip-user"><img class="chip-user__img" src="assets/user.jpg" href=""/>
+              <label class="chip-user__name">Gabriela Cabrera</label>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-content">
+        <header class="header">
+          <h1 class="header__title">Buenos días, <span>Gabriela!</span></h1>
+          <label class="txt-gray txt-m">Martes, 15 de Mayo de 2021</label>
+        </header>
+        <div class="row mt-4">
+          <div class="col-3 mb-4">
+            <div class="card">
+              <div class="card__header">
+                <div class="chip chip-min chip-purple"><i class="fas fa-shopping-cart"></i></div>
+                <label class="ml-1 txt-bold">Ventas</label>
+              </div>
+              <div class="card__body">
+                <label class="txt-bold txt-xl">1.5K</label><span class="txt-s d-block txt-gray">Este mes</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-4">
+            <div class="card">
+              <div class="card__header">
+                <div class="chip chip-min chip-blue"><i class="fas fa-hotel"></i></div>
+                <label class="ml-1 txt-bold">Sucursales</label>
+              </div>
+              <div class="card__body">
+                <label class="txt-bold txt-xl">3</label>
+              </div>
+              <div class="card__footer">
+                <button class="button--transparent">ver más</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-4">
+            <div class="card">
+              <div class="card__header">
+                <div class="chip chip-min chip-yellow"><i class="fas fa-user-tag"></i></div>
+                <label class="ml-1 txt-bold">Proveedores</label>
+              </div>
+              <div class="card__body">
+                <label class="txt-bold txt-xl">5</label>
+              </div>
+              <div class="card__footer">
+                <button class="button--transparent">ver más</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-4">
+            <div class="card">
+              <div class="card__header">
+                <div class="chip chip-min chip-green"><i class="fas fa-users"></i></div>
+                <label class="ml-1 txt-bold">Usuarios</label>
+              </div>
+              <div class="card__body">
+                <label class="txt-bold txt-xl">2</label>
+              </div>
+              <div class="card__footer">
+                <button class="button--transparent">ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <div class="card__header">
+                <label class="ml-1 txt-bold">Ventas en el tiempo</label>
+              </div>
+              <div class="card__body"><div id="chartdiv"></div></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <div class="card__header">
+                <label class="ml-1 txt-bold">Ventas en el tiempo</label>
+              </div>
+              <div class="card__body"><div id="chartdiv"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="assets/charts.js"></script>
+  </body>
+</html>
